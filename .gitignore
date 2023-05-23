@@ -361,3 +361,24 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Ignore Unity generated folders
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+
+# Ignore Visual Studio Code generated files
+.vs/
+/*.sln
+/*.csproj
+*.userprefs
+
+# Ignore macOS generated files
+.DS_Store
+
+# Ignore Windows generated files
+Thumbs.db
+
+# Ignore Unity generated meta files
+*.meta
