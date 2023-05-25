@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     private bool canTeleport = true;
     private float teleportCooldown = 2.0f;
 
-    public float _movementSpeed = 20.0f;
+    public float _movementSpeed = 40.0f;
     public Rigidbody2D rb;
     public Weapon weapon;
 
@@ -72,6 +72,11 @@ public class Player : MonoBehaviour
             }
         }
         StartCoroutine(TeleportCooldown());
+
+        if (other.tag == "EnemyMelee")
+        {
+            Destroy(gameObject);
+        }
     }
 
     IEnumerator TeleportCooldown()

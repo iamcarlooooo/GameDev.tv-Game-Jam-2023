@@ -21,10 +21,15 @@ public class RifleBullet : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         Destroy(gameObject);
+       
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         Destroy(gameObject);
+        
+        if (other.tag == "EnemyMelee") {
+            Destroy(other.gameObject);
+        }
     }
 }

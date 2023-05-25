@@ -12,6 +12,7 @@ TagManager:
   - AW01
   - AW02
   - AW03
+  - EnemyMelee
   layers:
   - Default
   - TransparentFX
