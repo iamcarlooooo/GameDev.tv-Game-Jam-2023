@@ -31,5 +31,9 @@ public class RifleBullet : MonoBehaviour
         if (other.tag == "EnemyMelee") {
             Destroy(other.gameObject);
         }
+        else if (other.tag == "EnemyShooter")
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
